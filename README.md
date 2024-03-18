@@ -1,9 +1,4 @@
-get pre-compiled binaries in releases(aarch64 only)
-
 # build 
+just run build.sh.
 
-if you want to build it yourself just run build.sh.
-
-if for some reason termux crashes during compilation, run build.sh again and again until it compiles(may crash several times depending on the device performance idk why).
-
-if u facing too much crashes during compiling try keeping the screen on during compiling process.
+if termux crashes or the process get killed by android during compilation edit the build.sh last line from `make install -j4` to `make install -j3` or less. you can also increase it to faster compiling, but bigger it is bigger will also be the chances of getting the process killd.
